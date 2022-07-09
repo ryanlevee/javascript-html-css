@@ -1,4 +1,5 @@
-# "play2Learn" Website and Games Project using JavaScript, HTML and CSS
+# "play2Learn" Website and Games Project<br>
+using JavaScript, HTML and CSS
 
 #1
 Clone repository
