@@ -1,4 +1,4 @@
-# Website and Game using JavaScript, HTML and CSS
+# HTML/CSS: "Play2Learn" Website | JavaScript: "Math Facts" Game
 
 Clone repository.
 
