@@ -1,11 +1,11 @@
 # Website and Game using JavaScript, HTML and CSS
 
-Clone repository
+Clone repository.
 
-Launch index.html in browser
+Launch index.html in browser.
 
 # To play "Math Facts"
-Navigate to the Math Facts page using the GAMES dropdown menu in the navbar. 
+Navigate to the Math Facts page using the GAMES dropdown menu in the navbar.
 
 
 Have Fun!
