@@ -1,4 +1,4 @@
-# Website and Games using JavaScript, HTML and CSS
+# Website and Game using JavaScript, HTML and CSS
 
 Clone repository
 
