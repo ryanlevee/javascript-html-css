@@ -1,0 +1,111 @@
+main {
+  min-height: 70vh;
+  margin: 10vh 0 0;
+}
+
+form,
+form * {
+  box-sizing: border-box;
+  margin: 1vh auto;
+}
+
+form {
+  text-align: right;
+  width: 44%;
+  margin-left: 25vw;
+}
+
+form * {
+  text-align: left;
+}
+
+h1 {
+  padding-left: 2.6vw;
+  font-size: 2.25vw;
+}
+
+label {
+  display: inline-block;
+  vertical-align: top;
+  width: 12.2vw;
+  height: 4.2vh;
+  padding: .5vh 0 .25vh .5vw;
+  background-color: #1CAC78;
+  border: .1vw solid #0d6545;
+  border-radius: .3vw;
+  text-shadow: .05vw .05vw #849790;
+  font-size: .95rem;
+}
+
+input,
+#message {
+  width: 29vw;
+  height: 4.2vh;
+  padding: .23vw;
+}
+
+#message {
+  height: 20vh;
+}
+
+input:focus,
+#message:focus {
+  border-right: .4vw solid #f4ae01;
+}
+
+#submit,
+.submit {
+  padding: 1vh 1.5vw;
+  border-radius: .5vw;
+  background-color: steelblue;
+  color: aliceblue;
+  font-size: 2.5vh;
+  text-shadow: .1vw .1vw rgb(7, 7, 61);
+}
+
+.reg-or-log-form {
+  width: 40.1vw;
+}
+
+.email,
+.password,
+.rep-password,
+.comments {
+  width: 25vw;
+}
+
+.comments {
+  height: 20vh;
+}
+
+.reg-or-log-click {
+  margin-left: 37.5%;
+  color: steelblue;
+}
+
+label[for="i-am-13"] {
+  position: relative;
+  width: 25vw;
+  margin-left: 15.1vw;
+  padding-left: 1.75vw;
+  border: none;
+  background-color: rgba(242, 242, 242, 0);
+  text-shadow: none;
+  font-size: .9vw;
+  cursor: pointer;
+}
+
+#i-am-13 {
+  position: absolute;
+  display: block;
+  width: 5%;
+  height: 100%;
+  top: -1.4vh;
+  left: 0;
+}
+
+
+form > p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/styles.css">
+<link rel="stylesheet" href="styles/forms.css">
+<script src="scripts/toggle.js"></script>
+<script src="https://kit.fontawesome.com/8423d8497a.js" crossorigin="anonymous"></script>
+<script>
+  addEventListener('load', function () {
+    document.getElementById('my-email').focus();
+  })
+  addEventListener('submit', function() {
+    alert('Form Submitted');
+  });
+</script>
+<title>Play2Learn: Contact Us</title>
+<link rel="shortcut icon" type="image/jpg" href="images/favicon.jpg"/>
+</head>
+<body>
+<header>
+<nav>
+  <div id="menu-icon">
+    <i class="fas fa-times"></i>
+    <i class="fas fa-bars"></i>
+  </div>
+    <a href="index.html" id="play2learn-logo-link">
+      <img src="images/play2learn-logo-banner-transparent_web-sm.png" id="play2learn-logo" title="Play2Learn!" alt="Play2Learn">
+    </a>
+    <div id="nav-nav">
+      <li><a href="index.html">Home</a></li>
+      <li class="games-li"><a href="#">Games</a>
+        <ul>
+          <li><a href="games/anagram-hunt/anagram-hunt.html">Anagram Hunt</a></li>
+          <li><a href="games/math-facts/math-facts.html">Math Facts Practice</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="login.html">Login</a></li>
+    </div>
+</nav>
+</header>
+<main>
+  <form id="form" method="post">
+    <h1>Contact Us</h1>
+    <label for="my-email">Your email:    </label>
+    <input type="email" id="my-email" name="My-Email" required>
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" maxlength="55" name="Subject" required>
+    <label for="message" required>Message:</label>
+    <textarea id="message" name="Message" minlength="10" maxlength="600" required></textarea>
+    <button id="submit" type="submit" name="Submit">Send</button>
+  </form>
+</main>
+<footer>
+  <div id="footer">
+    <p>&copy; 2022 Play2Learn. All rights are not reserved.</p>
+    <address>
+      <a href="contact-us.html">
+        <i class="fa-solid fa-envelope fa-2x"></i>
+      </a>
+      <a href="https://instagram.com">
+        <i class="fa-brands fa-instagram-square fa-2x"></i>
+      </a>
+      <a href="https://twitter.com">
+        <i class="fa-brands fa-twitter-square fa-2x"></i>
+      </a>
+      <a href="https://facebook.com">
+        <i class="fa-brands fa-facebook fa-2x"></i>
+      </a>
+  </div>
+</address>
+</footer>
+</body>
+</html>

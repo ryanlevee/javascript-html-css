@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../../styles/normalize.css">
+<link rel="stylesheet" href="../../styles/styles.css">
+<link rel="stylesheet" href="math-facts.css">
+<script src="math-facts.js"></script>
+<script src="../../scripts/toggle.js"></script>
+<script src="https://kit.fontawesome.com/8423d8497a.js" crossorigin="anonymous"></script>
+<title>Play2Learn: Math Facts Practice</title>
+<link rel="shortcut icon" type="image/jpg" href="../../images/favicon.jpg"/>
+</head>
+<body>
+<header>
+<nav>
+  <div id="menu-icon">
+    <i class="fas fa-times"></i>
+    <i class="fas fa-bars"></i>
+  </div>
+    <a href="../../index.html" id="play2learn-logo-link">
+      <img src="../../images/play2learn-logo-banner-transparent_web-sm.png" id="play2learn-logo" title="Play2Learn!" alt="Play2Learn">
+    </a>
+    <div id="nav-nav">
+      <li><a href="../../index.html">Home</a></li>
+      <li class="games-li"><a href="#">Games</a>
+        <ul>
+          <li><a href="../anagram-hunt/anagram-hunt.html">Anagram Hunt</a></li>
+          <li><a href="math-facts.html">Math Facts Practice</a></li>
+        </ul>
+      </li>
+      <li><a href="../../about.html">About</a></li>
+      <li><a href="../../login.html">Login</a></li>
+    </div>
+</nav>
+</header>
+<main>
+  <div id="big-game">
+    <div id="start-div">
+      <p>Math Facts Practice</p>
+      <form id="menu-div">
+        <label for="menu">Operation:</label>
+        <select name="menu" id="menu" required>
+          <option value="0" selected="selected">--Please Choose--</option>
+          <option name="Addition" value="+">Addition</option>
+          <option name="Subtraction" value="-">Subtraction</option>
+          <option name="Multiplication" value="*">Multiplication</option>
+          <option name="Division" value="/">Division</option>
+        </select>
+      </form>
+      <button id="go-button">Go!</button>
+      <ol id="instructions">
+        <li>Select Operation</li>
+        <li>Press <span>Go!</span></li>
+        <li>How many problems can you solve in 30 seconds?</li>
+      </ol>
+    </div>
+    <div id="game-div" style="display: none">
+      <div id="problem"></div>
+      <div id="game-left">
+        <div class="game-selected"></div>
+        <p>Press 'Enter' to check your answer.</p>
+        <p id="divide" style="position: absolute; display: none">Answer format: 0.1, 1.4, 4.0, etc.
+          <br>Round to the nearest first decimal.</p>
+        <pre id="game-score">Score:      <span>0</span></pre>
+        <pre id="game-timer">Time Left:  <span>30</span></pre>
+      </div>
+      <div id="game-right">
+        <form id="numpad">
+          <input id="display" autocomplete="off">
+          <div class="buttons-div">
+            <button type="button" class="buttons">1</button>
+            <button type="button" class="buttons">2</button>
+            <button type="button" class="buttons">3</button>
+            <button type="button" class="buttons">4</button>
+            <button type="button" class="buttons">5</button>
+            <button type="button" class="buttons">6</button>
+            <button type="button" class="buttons">7</button>
+            <button type="button" class="buttons">8</button>
+            <button type="button" class="buttons">9</button>
+            <button type="button" class="buttons">0</button>
+            <button type="button" id="clear" class="buttons">CLEAR</button>
+          </div>
+        </form>
+      </div>
+      <button id="back-button" style="display: none">Back</button>
+    </div>
+    <div id="end-div" style="display: none">
+      <p>Math Facts Practice</p>
+      <p>Times up!</p>
+      <p class="game-selected"></p>
+      <pre id="end-score">Final Score:  <span>0 </span></pre>
+      <button id="again-button" style="display: none">Again!</button>
+    </div>
+    <div>
+    </div>
+</div>
+</main>
+<footer>
+  <div id="footer">
+    <p>&copy; 2022 Play2Learn. All rights are not reserved.</p>
+    <address>
+      <a href="../../contact-us.html">
+        <i class="fa-solid fa-envelope fa-2x"></i>
+      </a>
+      <a href="https://instagram.com">
+        <i class="fa-brands fa-instagram-square fa-2x"></i>
+      </a>
+      <a href="https://twitter.com">
+        <i class="fa-brands fa-twitter-square fa-2x"></i>
+      </a>
+      <a href="https://facebook.com">
+        <i class="fa-brands fa-facebook fa-2x"></i>
+      </a>
+  </div>
+</address>
+</footer>
+</body>
+</html>

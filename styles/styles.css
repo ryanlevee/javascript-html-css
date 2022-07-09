@@ -1,0 +1,637 @@
+html, body {
+  background-color:rgb(242, 242, 242);
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  font-family:Verdana, Tahoma, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100vw;
+}
+
+nav #menu-icon {
+  display: none;
+}
+
+nav {
+  margin-top: -.9rem;
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  background-color: #1956b1;
+}
+
+nav a {
+  display: block;
+  height: 40px;
+  font-size: 1.1rem;
+  padding-top: 1.3rem;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(255, 250, 228);
+}
+
+#nav-nav a:first-of-type {
+  color: rgb(255, 250, 228);
+}
+
+#play2learn-logo {
+  display: flex;
+  height: 60px;
+  top: 100px;
+  margin: auto;
+}
+
+#nav-nav {
+  display: flex;
+  width: 85%;
+  justify-content: space-evenly;
+}
+
+#nav-nav > li {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  padding-top: .7rem;
+}
+
+.games-li ul {
+  position: absolute;
+  display: none;
+  top: 54px;
+  box-sizing: border-box;
+  border: 1.5px solid rgb(192, 190, 202);
+  background-color: white;
+  padding-left: 0;
+  min-width: 100%;
+  background-color: #1956b1;
+  z-index: 1;
+}
+
+.games-li li {
+  width: 100%;
+  display: flex;
+  margin: auto 0;
+}
+
+.games-li a {
+  float: left;
+  position: relative;
+  width: 100%;
+}
+
+.games-li:hover > ul {
+  display: block;
+}
+
+#nav-nav li:hover {
+  background-color: #ffcf00;
+}
+
+#nav-nav a:hover {
+  color: black;
+}
+
+#nav-nav a:active {
+  background-color: orange;
+  box-shadow: inset 0 0 0 1.2px #af6d17;
+}
+
+main {
+  display: block;
+  min-height: 70vh;
+  margin: 0 auto;
+}
+
+#happy-clients {
+  margin: 5rem auto 0;
+  width: 70vw;
+  height: 8vw;
+  padding: 5px 28.5px;
+  background-color: #1956b1;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  font-weight: bold;
+  z-index: 0;
+  position: relative;
+  color: #ffcf00;
+  overflow: hidden;
+}
+
+#happy-clients p:first-of-type {
+  position: relative;
+  margin-top: 2%;
+  font-weight: bold;
+  margin-left: 20%;
+  margin-right: 15%;
+  color: #f0833a;
+  font-style: italic;
+}
+
+#happy-clients p:nth-of-type(2) {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 33%;
+}
+
+#credit {
+  position: relative;
+  margin-top: 5%;
+  padding-left: 65%;
+  font-style: italic;
+  color: #f0833a;
+}
+
+.games-articles {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+article {
+  display: inline-block;
+  margin: 0 1rem;
+  padding: 1rem 1.2rem 0;
+  height: 20vw;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+article p {
+  color: whitesmoke;
+}
+
+article p:first-of-type {
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+article>p:last-of-type {
+  position: relative;
+  width: 27vw;
+  height: 60%;
+  overflow-y: auto;
+}
+
+#anagram {
+  border-bottom-left-radius: 100px;
+  background-color: #388E3C;
+  transition: transform .3s;
+}
+
+#math {
+  border-bottom-right-radius: 100px;
+  background-color: #b93321;
+  transition: transform .3s;
+}
+
+#anagram>p:last-of-type {
+  border-bottom-left-radius: 1.75rem;
+}
+
+#math>p:first-of-type {
+  text-align: right;
+}
+
+#math>p:last-of-type {
+  border-bottom-right-radius: 1.75rem;
+  direction: rtl;
+}
+
+#anagram:hover {
+  transform: scale(1.02);
+}
+
+#math:hover {
+  transform: scale(1.02);
+}
+
+.button {
+  position: absolute;
+  margin-top: 15px;
+  padding: 1rem 1.5rem;
+  top: 0;
+  font-weight: bold;
+  color: black;
+  border-radius: 1rem;
+  border-bottom: 3px solid #E1A95F;
+  background-color:#FFEB3B;
+}
+
+#anagram .button {
+  right: 15px;
+  border-right: 3px solid #E1A95F;
+}
+
+#math .button {
+  left: 15px;
+  border-left: 3px solid #E1A95F;
+}
+
+#math .button:active,
+#anagram .button:active {
+  border: 0;
+}
+
+footer {
+  width: auto;
+  padding-left: 1rem;
+  padding-bottom: .5rem;
+  font-size: 1.85vh;
+}
+
+
+address img,
+address i {
+  color: rgb(86, 86, 173);
+  padding: 0 15px;
+}
+
+@media (min-width: 2560px) {
+  main {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  #happy-clients {
+    width: 80vw;
+    height: 10vw;
+  }
+
+  #credit {
+    top: 0;
+    margin-left: 1rem;
+  }
+
+  #anagram .button,
+  #math .button {
+    display: block;
+    margin-top: .9rem;
+    padding: .9rem;
+  }
+
+  article {
+    height: 24vw
+  }
+
+  article p:first-of-type {
+    font-size: medium;
+  }
+
+  #anagram,
+  #math {
+    width: 27vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  main {
+    width: 100vw;
+    font-size: .9rem;
+  }
+
+  #happy-clients {
+    width: 83vw;
+    height: 13vw;
+  }
+
+  #happy-clients p:first-of-type {
+    top: 0;
+  }
+
+  #happy-clients p:nth-of-type(2) {
+      margin: 1vw auto 0;
+      width: 70vw;
+      text-align: left;
+      left: initial;
+      right: 10vw;
+  }
+
+  #credit {
+    margin-left: 1rem;
+    top: 1vw;
+  }
+
+  article>p:first-of-type {
+    margin-bottom: 1.75rem;
+  }
+
+  #anagram .button,
+  #math .button {
+    display: block;
+    margin-top: .5rem;
+    padding: .5rem;
+  }
+
+  article {
+    height: 30vw;
+  }
+
+  #anagram,
+  #math {
+    width: 30vw;
+  }
+
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 100vw;
+    font-size: .9rem;
+  }
+
+  #happy-clients {
+    width: 85vw;
+    height: 25vw;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+  }
+
+  #happy-clients p:first-of-type {
+    padding-top: 3vh;
+  }
+
+  #happy-clients p:nth-of-type(2) {
+    font-size: .8rem;
+    margin: 0 auto;
+    width: 60vw;
+    text-align: left;
+    left: initial;
+    right: 10vw;
+  }
+
+  #credit {
+    top: 4vw;
+    left: 2vw;
+  }
+
+  article {
+    display: block;
+    height: 30.5vw;
+    padding: 1rem 2.5rem;
+    text-align: left;
+  }
+
+  article p:first-of-type {
+    margin-bottom: 1.75rem;
+  }
+
+  article p:last-of-type {
+    width: auto;
+  }
+
+  #anagram p:last-of-type {
+    direction: rtl;
+  }
+
+  #math p:last-of-type {
+    text-align: right;
+    right: 0;
+    direction: ltr;
+  }
+
+  #anagram,
+  #math {
+    margin: auto;
+    width: 60vw;
+    border-radius: 0;
+  }
+
+  #math {
+    border-radius: 0 0 75px 75px;
+  }
+
+  .button
+  #anagram .button,
+  #math .button {
+    all: none;
+  }
+
+}
+
+@media (max-width: 500px) {
+  main {
+    width: 100vw;
+  }
+
+  #happy-clients {
+    margin: .5rem auto 0;
+    width: auto;
+    height: 18vw;
+    padding: 1rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-radius: 0;
+    z-index: 0;
+    font-size: small;
+  }
+
+  #happy-clients p:first-of-type {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  #happy-clients p:nth-of-type(2) {
+    position: absolute;
+    text-align: left;
+    width: 90vw;
+    left: 1rem;
+    right: 0;
+    top: 35%;
+    font-size: smaller;
+  }
+
+  #credit {
+    position: relative;
+    top: 3.3vw;
+    text-align: right;
+    font-style: italic;
+    color: #f0833a;
+  }
+
+  nav {
+    all:initial;
+    list-style: none;
+    position: relative;
+  }
+
+  .games-articles,
+  article,
+  article p,
+  article .button,
+  #anagram,
+  #anagram p,
+  #anagram>p:first-of-type,
+  #anagram>p:last-of-type,
+  #anagram:hover,
+  #anagram .button,
+  #math,
+  #math>p:first-of-type,
+  #math>p:last-of-type,
+  #math p,
+  #math:hover,
+  #math .button {
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: left;
+    width: auto;
+    overflow: auto;
+    direction: none;
+    border: none;
+    border-radius: 0;
+    transform: none;
+    transition: none;
+    width: none;
+    z-index:initial;
+  }
+
+  #anagram,
+  #math {
+    height: 42vw;
+    margin-top: .75rem;
+  }
+
+  #anagram .button,
+  #math .button {
+    display: block;
+    width: 100%;
+    margin-top: .5rem;
+    padding: .5rem;
+  }
+
+  nav #menu-icon {
+    position: relative;
+    padding: 4% 0;
+    width: 100%;
+    background:  #1956b1;
+    color: black;
+    cursor: pointer;
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  nav a {
+    padding: initial;
+    height: initial
+  }
+
+  #nav-nav {
+    width: auto;
+    flex-direction: column;
+  }
+
+  #nav-nav,
+  nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  #nav-nav li {
+    display: block;
+    padding: 0;
+    flex: 1;
+    height: 2.3rem;
+  }
+
+  #nav-nav a {
+    background:  #1956b1;
+    color: black;
+    font-weight: bold;
+    display: block;
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  #nav-nav a:hover {
+    color:rgb(192, 190, 202);
+    background:  #245298;
+    border: inset 1px #183663;
+  }
+
+  .games-li a {
+    width: auto;
+    float: none;
+  }
+
+  .games-li ul {
+    position: relative;
+    width: auto;
+    display: none;
+    top: auto;
+    border: none;
+  }
+
+  .games-li:hover>ul{
+    display: block;
+  }
+
+  .games-li:active>ul>li>a {
+  border: .1px solid white;
+  }
+
+  #play2learn-logo-link {
+    display: none;
+  }
+
+  #play2learn-logo {
+    display: none;
+  }
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(96, 96, 96, 0.316);
+}
+
+::-webkit-scrollbar-thumb {
+background-color: darkgrey;
+outline: 1px solid slategrey;
+border-radius: 10px;
+}
+
+/* some extra stuff: */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(96, 96, 96, 0.316);
+}
+
+::-webkit-scrollbar-thumb {
+background-color: darkgrey;
+outline: 1px solid slategrey;
+border-radius: 10px;
+}

@@ -1,0 +1,54 @@
+header {
+  width: 99.5vw;
+}
+
+main {
+  width: fit-content;
+  font-size: .9rem;
+}
+
+#about {
+  width:calc(78vw + 2rem + 10px);
+  margin: 4vh auto;
+  text-align: justify;
+}
+
+#team {
+  margin: 0 auto 2%;
+  text-align: center;
+}
+
+#team div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 39vw;
+  margin: 0 1rem;
+  text-align: left;
+  border: 1px solid darkgray;
+  background-color: rgb(202, 208, 216);
+  transition: transform .3s;
+}
+
+#team div:hover {
+  transform: scale(1.02);
+}
+
+#team img {
+  float: left;
+  width: 14vw;
+  margin-right: 10px;
+  outline: 1px solid darkgray;
+}
+
+#team img + p {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#team img + p + p {
+  width: 38vw;
+}
+
+footer {
+  clear: both;
+}
