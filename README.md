@@ -1,6 +1,6 @@
-#Website and Games using JavaScript, HTML and CSS
+# Website and Games using JavaScript, HTML and CSS
 
-#1
+<h4>Step 1:<h4>
 Clone repository
 <br>
 
