@@ -2,7 +2,8 @@
 
 #1
 Clone repository
-<br><br>
+<br>
+
 #2
 Launch index.html in browser
 <br><br>
