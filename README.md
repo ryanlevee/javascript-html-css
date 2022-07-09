@@ -1,9 +1,8 @@
-Website and Games using JavaScript, HTML and CSS
+#Website and Games using JavaScript, HTML and CSS
 
 #1
 Clone repository
 <br><br>
-
 #2
 Launch index.html in browser
 <br><br>
